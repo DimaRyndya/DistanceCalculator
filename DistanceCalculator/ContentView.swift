@@ -6,22 +6,23 @@ struct ContentView: View {
             GoogleMapView()
                 .edgesIgnoringSafeArea(.all)
                 .toolbar {
-                    ToolbarItem(placement: .bottomBar) {
-                        Button(action: {}) {
-                            Text("Loading")
-                        }
-                        .padding()
-                    }
+//                    ToolbarItem(placement: .bottomBar) {
+//                        Button(action: {}) {
+//                            Text("Loading")
+//                        }
+//                        .padding()
+//                    }
                     ToolbarItem(placement: .status) {
                         Button(action: {}) {
                             Text("Error")
                         }
+
                     }
-                    ToolbarItem(placement: .bottomBar) {
-                        Button(action: {}) {
-                            Text("Results")
-                        }
-                    }
+//                    ToolbarItem(placement: .bottomBar) {
+//                        Button(action: {}) {
+//                            Text("Results")
+//                        }
+//                    }
                 }
         }
     }
