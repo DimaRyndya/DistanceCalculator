@@ -2,8 +2,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        GoogleMapView()
-            .edgesIgnoringSafeArea(.all)
+        NavigationView {
+            GoogleMapView()
+                .edgesIgnoringSafeArea(.all)
+                .toolbar {
+                    ToolbarItem(placement: .bottomBar) {
+                        Button(action: {}) {
+                            Text("Loading")
+                        }
+                        .padding()
+                    }
+                    ToolbarItem(placement: .status) {
+                        Button(action: {}) {
+                            Text("Error")
+                        }
+                    }
+                    ToolbarItem(placement: .bottomBar) {
+                        Button(action: {}) {
+                            Text("Results")
+                        }
+                    }
+                }
+        }
     }
 }
 

@@ -12,6 +12,8 @@
 		1DB615AC28EDAB2E004A9319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB615AB28EDAB2E004A9319 /* Assets.xcassets */; };
 		1DB615AF28EDAB2E004A9319 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB615AE28EDAB2E004A9319 /* Preview Assets.xcassets */; };
 		1DE41E3528EDB37400BA1DCA /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE41E3428EDB37400BA1DCA /* GoogleMapView.swift */; };
+		1DE41E3728EDE6F000BA1DCA /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE41E3628EDE6F000BA1DCA /* MapInteractor.swift */; };
+		1DE41E3928EDE80000BA1DCA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE41E3828EDE80000BA1DCA /* ViewModel.swift */; };
 		6520C72036E8C068CC204013 /* Pods_DistanceCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD7A99772A1800C72935A05 /* Pods_DistanceCalculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +24,8 @@
 		1DB615AB28EDAB2E004A9319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DB615AE28EDAB2E004A9319 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DE41E3428EDB37400BA1DCA /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
+		1DE41E3628EDE6F000BA1DCA /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		1DE41E3828EDE80000BA1DCA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4654B098A3148D95F931B492 /* Pods-DistanceCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceCalculator.release.xcconfig"; path = "Target Support Files/Pods-DistanceCalculator/Pods-DistanceCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		7CD7A99772A1800C72935A05 /* Pods_DistanceCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DistanceCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FC34A92B46FCCD41A4CDF4 /* Pods-DistanceCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceCalculator.debug.xcconfig"; path = "Target Support Files/Pods-DistanceCalculator/Pods-DistanceCalculator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				1DB615A728EDAB2D004A9319 /* DistanceCalculatorApp.swift */,
 				1DE41E3428EDB37400BA1DCA /* GoogleMapView.swift */,
 				1DB615A928EDAB2D004A9319 /* ContentView.swift */,
+				1DE41E3628EDE6F000BA1DCA /* MapInteractor.swift */,
+				1DE41E3828EDE80000BA1DCA /* ViewModel.swift */,
 				1DB615AB28EDAB2E004A9319 /* Assets.xcassets */,
 				1DB615AD28EDAB2E004A9319 /* Preview Content */,
 			);
@@ -208,9 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE41E3928EDE80000BA1DCA /* ViewModel.swift in Sources */,
 				1DE41E3528EDB37400BA1DCA /* GoogleMapView.swift in Sources */,
 				1DB615AA28EDAB2D004A9319 /* ContentView.swift in Sources */,
 				1DB615A828EDAB2D004A9319 /* DistanceCalculatorApp.swift in Sources */,
+				1DE41E3728EDE6F000BA1DCA /* MapInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
