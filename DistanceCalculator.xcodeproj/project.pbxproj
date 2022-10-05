@@ -11,6 +11,7 @@
 		1DB615AA28EDAB2D004A9319 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB615A928EDAB2D004A9319 /* ContentView.swift */; };
 		1DB615AC28EDAB2E004A9319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB615AB28EDAB2E004A9319 /* Assets.xcassets */; };
 		1DB615AF28EDAB2E004A9319 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB615AE28EDAB2E004A9319 /* Preview Assets.xcassets */; };
+		1DE41E3528EDB37400BA1DCA /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE41E3428EDB37400BA1DCA /* GoogleMapView.swift */; };
 		6520C72036E8C068CC204013 /* Pods_DistanceCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD7A99772A1800C72935A05 /* Pods_DistanceCalculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +21,7 @@
 		1DB615A928EDAB2D004A9319 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1DB615AB28EDAB2E004A9319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DB615AE28EDAB2E004A9319 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1DE41E3428EDB37400BA1DCA /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
 		4654B098A3148D95F931B492 /* Pods-DistanceCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceCalculator.release.xcconfig"; path = "Target Support Files/Pods-DistanceCalculator/Pods-DistanceCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		7CD7A99772A1800C72935A05 /* Pods_DistanceCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DistanceCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FC34A92B46FCCD41A4CDF4 /* Pods-DistanceCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceCalculator.debug.xcconfig"; path = "Target Support Files/Pods-DistanceCalculator/Pods-DistanceCalculator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				1DB615A728EDAB2D004A9319 /* DistanceCalculatorApp.swift */,
+				1DE41E3428EDB37400BA1DCA /* GoogleMapView.swift */,
 				1DB615A928EDAB2D004A9319 /* ContentView.swift */,
 				1DB615AB28EDAB2E004A9319 /* Assets.xcassets */,
 				1DB615AD28EDAB2E004A9319 /* Preview Content */,
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE41E3528EDB37400BA1DCA /* GoogleMapView.swift in Sources */,
 				1DB615AA28EDAB2D004A9319 /* ContentView.swift in Sources */,
 				1DB615A828EDAB2D004A9319 /* DistanceCalculatorApp.swift in Sources */,
 			);
@@ -249,6 +253,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -338,12 +343,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DistanceCalculator/Preview Content\"";
 				DEVELOPMENT_TEAM = CHL34W9FC3;
 				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +381,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
