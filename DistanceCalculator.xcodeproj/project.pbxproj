@@ -80,7 +80,6 @@
 				D1FC34A92B46FCCD41A4CDF4 /* Pods-DistanceCalculator.debug.xcconfig */,
 				4654B098A3148D95F931B492 /* Pods-DistanceCalculator.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

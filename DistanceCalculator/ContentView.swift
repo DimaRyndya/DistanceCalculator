@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  DistanceCalculator
-//
-//  Created by Dmitriy Ryndya on 05.10.2022.
-//
-
 import SwiftUI
 
 struct ContentView: View {
