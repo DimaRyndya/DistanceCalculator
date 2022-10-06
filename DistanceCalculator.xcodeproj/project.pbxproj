@@ -26,6 +26,7 @@
 		1DE41E3428EDB37400BA1DCA /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
 		1DE41E3628EDE6F000BA1DCA /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 		1DE41E3828EDE80000BA1DCA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1DE41E3A28EE206D00BA1DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4654B098A3148D95F931B492 /* Pods-DistanceCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceCalculator.release.xcconfig"; path = "Target Support Files/Pods-DistanceCalculator/Pods-DistanceCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		7CD7A99772A1800C72935A05 /* Pods_DistanceCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DistanceCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FC34A92B46FCCD41A4CDF4 /* Pods-DistanceCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceCalculator.debug.xcconfig"; path = "Target Support Files/Pods-DistanceCalculator/Pods-DistanceCalculator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		1DB615A628EDAB2D004A9319 /* DistanceCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				1DE41E3A28EE206D00BA1DCA /* Info.plist */,
 				1DB615A728EDAB2D004A9319 /* DistanceCalculatorApp.swift */,
 				1DE41E3428EDB37400BA1DCA /* GoogleMapView.swift */,
 				1DB615A928EDAB2D004A9319 /* ContentView.swift */,
@@ -353,6 +355,8 @@
 				ENABLE_PREVIEWS = YES;
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DistanceCalculator/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "By accessing your location, this app can find you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -384,6 +388,8 @@
 				DEVELOPMENT_TEAM = CHL34W9FC3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DistanceCalculator/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "By accessing your location, this app can find you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

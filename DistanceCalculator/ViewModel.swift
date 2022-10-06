@@ -1,4 +1,6 @@
 import SwiftUI
 import GoogleMaps
 
-let interactor = MapInteractor()
+class ViewModel {
+    let interactor = MapInteractor()
+}

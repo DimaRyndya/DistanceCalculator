@@ -1,28 +1,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    let viewModel = ViewModel()
+    
     var body: some View {
         NavigationView {
             GoogleMapView()
                 .edgesIgnoringSafeArea(.all)
                 .toolbar {
-//                    ToolbarItem(placement: .bottomBar) {
-//                        Button(action: {}) {
-//                            Text("Loading")
-//                        }
-//                        .padding()
-//                    }
                     ToolbarItem(placement: .status) {
-                        Button(action: {}) {
+                        Button(action: { viewModel.interactor.setUpMap()}) {
                             Text("Error")
                         }
-
                     }
-//                    ToolbarItem(placement: .bottomBar) {
-//                        Button(action: {}) {
-//                            Text("Results")
-//                        }
-//                    }
                 }
         }
     }
