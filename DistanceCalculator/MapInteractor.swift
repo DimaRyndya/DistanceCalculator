@@ -1,18 +1,20 @@
 import SwiftUI
 import GoogleMaps
+import CoreLocation
 
-class MapInteractor {
-    
-    let marker: GMSMarker = GMSMarker()
+class MapInteractor: NSObject, GMSMapViewDelegate {
 
-    func placeMarker(latitude: CGFloat, longtitude: CGFloat) {
-        marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
+    let mapView = GMSMapView()
+
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        let marker = GMSMarker(position: coordinate)
         marker.title = "Seleted Location"
-        marker.snippet = "Hello"
+        marker.map = mapView
+        mapView.delegate = self
     }
 
 
-    func setUpMap(mapView: GMSMapView) {
+    func setUpMap() -> GMSMapView {
         mapView.settings.compassButton = true
         mapView.isMyLocationEnabled = true
         mapView.settings.myLocationButton = true
@@ -21,5 +23,6 @@ class MapInteractor {
         mapView.settings.rotateGestures = true
         mapView.settings.tiltGestures = true
         mapView.isIndoorEnabled = false
+        return mapView
     }
 }

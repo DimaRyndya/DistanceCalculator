@@ -67,8 +67,8 @@
 			children = (
 				1DE41E3A28EE206D00BA1DCA /* Info.plist */,
 				1DB615A728EDAB2D004A9319 /* DistanceCalculatorApp.swift */,
-				1DE41E3428EDB37400BA1DCA /* GoogleMapView.swift */,
 				1DB615A928EDAB2D004A9319 /* ContentView.swift */,
+				1DE41E3428EDB37400BA1DCA /* GoogleMapView.swift */,
 				1DE41E3628EDE6F000BA1DCA /* MapInteractor.swift */,
 				1DE41E3828EDE80000BA1DCA /* ViewModel.swift */,
 				1DB615AB28EDAB2E004A9319 /* Assets.xcassets */,

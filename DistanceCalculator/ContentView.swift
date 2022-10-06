@@ -3,8 +3,8 @@ import GoogleMaps
 
 struct ContentView: View {
     let viewModel = ViewModel()
-    let latitude = CLLocationManager().location?.coordinate.latitude
-    let longtitude = CLLocationManager().location?.coordinate.longitude
+//    let latitude = CLLocationManager().location?.coordinate.latitude
+//    let longtitude = CLLocationManager().location?.coordinate.longitude
 
     var body: some View {
         NavigationView {
@@ -17,9 +17,8 @@ struct ContentView: View {
                         }
                     }
                 }
-                .onTapGesture {
-                    viewModel.interactor.placeMarker(latitude: latitude!, longtitude: longtitude!)
-                }
+//                .onTapGesture {
+//                }
         }
     }
 }
